@@ -7,65 +7,59 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+  <style>
+    .player {
+      width: 800px;
+      position: relative;
+    }
+
+    .player__video {
+      width: 100%;
+    }
+
+    .player__controls {
+      position: absolute;
+      bottom: 3px;
+      background: ;
+      width: 100%;
+    }
+
+    .progress {
+      height: 10px;
+      width: 100%;
+      display: flex;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .progress__filled {
+      background: #EF5D60;
+      height: 100%;
+      flex: 0;
+      flex-basis: 0%;
+    }
+  </style>
 </head>
 
 <body>
-  <!--
-  <p class="action">action</p>
-  <p class="comedy">commedy</p>
-  <p class="horor">horor</p>
-  <p class="animation">anim</p>
-  <p class="thriller">thriller</p>
 
-  <button class="button" type="button" name="button">pres to create</button>
-  <section class="section1">
-    <ul class="container">
-      <li>1</li>
-    </ul>
-  </section>
--->
-  <header class="header">
-    <div class="container">
-      <img src="images/logo_wave.gif" alt="" class="logo">
-    </div>
-  </header>
-  <video src="player__video viewer" src="TIE+Fighter+-+short+film(720p).mp4"></video>
-  <button class="player__button toggle" title="toggle play"></button>
-  <input type="range" name="volume" class="layer__slider" min="0" max="1" step="0.05" value="1">
 
-  <section class="featured">
-    <div class="container">
-      <div class="name_container">
-        <span class="author_name">Otaking77077</span>
+  <div class="player">
+    <video class="player__video viewer" src="TIE+Fighter+-+short+film(720p).mp4"></video>
+    <div class="player__controls">
+      <div class="progress">
+        <div class="progress__filled"></div>
       </div>
-      <div class="film_name_container">
-        <span class="film_title">TIE Fighter - Short Film</span>
-      </div>
-      <div class="desc_container">
-        <p class="film_description">
-          hat if there was an Empire-focussed short Star Wars animation, drawn with the crazy detail …
-        </p>
-      </div>
+      <button class="player__button toggle" title="toggle play">▶</button>
+      <button class="player__button stop" title="stop play">■</button>
+      <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
     </div>
-    <div class="fade_overlay"></div>
-  </section>
-  <section class="popular">
-    <div class="container">
-
-    </div>
-  </section>
-
-
-
-
-
+  </div>
 
 
 
 
   <script type="text/javascript" src="js/data.js"></script>
-  <script type="text/javascript" src="js/table.js"></script>
-  <script type="text/javascript" src="js/video.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
 </body>
 
 </html>
