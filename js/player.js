@@ -15,4 +15,4 @@ function togglePlay(){
     video.pause();
   }
 }
-/* Accrocher les evetns listener */
+/* Accrocher les events listener */
