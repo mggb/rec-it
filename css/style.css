@@ -13,12 +13,12 @@ body {
 }
 
 .logo {
-  height: 70px;
+  height: 30px;
   margin: 22px 0;
 }
 
 .featured {
-  background-image: url("../images/TIE_Fighter_Short_Film_TIE_Fighters.jpg");
+  background-image: url("../images/tie+fighter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -68,6 +68,20 @@ body {
   flex-direction: row;
   justify-content: space-around;
 }
+
+.navigation {
+  display: block;
+  color: #FFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+.menu {
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+
 
 /* more than 480px wide */
 
