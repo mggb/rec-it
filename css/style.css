@@ -26,6 +26,36 @@
   /*background-image: linear-gradient( 0deg, #2B243F, 90%, rgba(0, 0, 0, 0));*/
   background-image: url("../images/overlay_purple.png");
   background-size: cover;
+  display: none;
+}
+
+.name_container {
+  padding-bottom: 30px;
+  border-bottom: solid #EF5D60 8px;
+}
+
+.author_name {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18pt;
+  color: #F1FAEE;
+}
+
+.film_title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 38pt;
+  color: #F1FAEE;
+  display: block;
+}
+
+.desc_container {}
+
+.film_description {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  color: #F1FAEE;
 }
 
 /* more than 480px wide */
