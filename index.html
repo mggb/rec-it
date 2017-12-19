@@ -26,25 +26,42 @@
 -->
   <header class="header">
     <div class="container">
-      <img src="images/logo_wave.gif" alt="" class="logo">
+      <img src="images/logo_flex.svg" alt="" class="logo">
     </div>
   </header>
-  <section class="featured">
-    <div class="container">
-      <div class="name_container">
-        <span class="author_name">Otaking77077</span>
-      </div>
-      <div class="film_name_container">
-        <span class="film_title">TIE Fighter - Short Film</span>
-      </div>
-      <div class="desc_container">
-        <p class="film_description">
-          hat if there was an Empire-focussed short Star Wars animation, drawn with the crazy detail …
-        </p>
-      </div>
+  <video src="TIE+Fighter+-+short+film(720p).mp4" class="player viewer"></video>
+  <div class="player__controls">
+    <div class="progress">
+      <div class="progress__filled"></div>
     </div>
-    <div class="fade_overlay"></div>
+    <button class="player__button" title="toggle play">PLAY</button>
+
+    <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+  </div>
+
+  <section class="featured overlay">
+    <div class="container">
+      <div class="featured_container">
+        <div class="name_container">
+          <span class="author_name">Otaking77077</span>
+        </div>
+        <div class="film_name_container">
+          <span class="film_title">TIE Fighter <br>- Short Film</span>
+        </div>
+        <div class="desc_container">
+          <p class="film_description">
+            hat if there was an Empire-focussed short Star Wars animation, drawn with the crazy detail …
+          </p>
+        </div>
+        <div class="action_pannel">
+          <a href="#" class="video_link"></a>
+          <a href="#" class="info_link"></a>
+        </div>
+      </div>
+
+    </div>
   </section>
+
   <section class="popular">
     <div class="container">
 
@@ -62,6 +79,7 @@
   <script type="text/javascript" src="js/data.js"></script>
   <script type="text/javascript" src="js/table.js"></script>
   <script type="text/javascript" src="js/video.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
 </body>
 
 </html>

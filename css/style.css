@@ -1,14 +1,19 @@
+body {
+  background-color: #2B243F;
+}
+
 .container {
   margin: 0 35px;
 }
 
 .header {
-  background-color: #2B243F;
+  position: fixed;
+  z-index: 30;
+  width: 100%;
 }
 
 .logo {
   height: 70px;
-  background: #fff;
   margin: 22px 0;
 }
 
@@ -17,21 +22,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 114px);
+  height: 100vh;
+  padding-top: 114px;
+  box-sizing: border-box;
 }
 
-.fade_overlay {
-  height: calc(100vh - 114px);
-  width: 100%;
-  /*background-image: linear-gradient( 0deg, #2B243F, 90%, rgba(0, 0, 0, 0));*/
-  background-image: url("../images/overlay_purple.png");
-  background-size: cover;
-  display: none;
-}
+.featured_container {}
 
 .name_container {
   padding-bottom: 30px;
-  border-bottom: solid #EF5D60 8px;
 }
 
 .author_name {
@@ -41,21 +40,33 @@
   color: #F1FAEE;
 }
 
+.film_name_container {
+  padding-bottom: 30px;
+}
+
 .film_title {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  font-size: 38pt;
+  font-size: 54pt;
   color: #F1FAEE;
   display: block;
 }
 
-.desc_container {}
+.desc_container {
+  padding-bottom: 34px;
+}
 
 .film_description {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   font-size: 16pt;
   color: #F1FAEE;
+}
+
+.action_pannel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /* more than 480px wide */
