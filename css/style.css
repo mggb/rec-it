@@ -2,22 +2,41 @@ body {
   background-color: #2B243F;
 }
 
-.container {
-  margin: 0 35px;
-}
-
 .header {
   position: fixed;
   z-index: 30;
   width: 100%;
 }
 
+.listContainer {
+  display: inline-block;
+
+}
+
 .logo {
+  display: block;
+  position: absolute;
   height: 30px;
   margin: 22px 0;
+  margin-left: 67px;
+}
+.navigation {
+  display: block;
+  float: right;
+  color: #FFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 23px;
+  margin-right: 69px;
+
+}
+
+.menu {
+
 }
 
 .featured {
+  background: fixed;
   background-image: url("../images/tie+fighter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -38,6 +57,12 @@ body {
   font-weight: 700;
   font-size: 18pt;
   color: #F1FAEE;
+  margin-left: 69px;
+  margin-bottom: 48px;
+  margin-top: 110px;
+  border-bottom: 8px solid #EF5D60;
+  width: 180px;
+  margin-left: 67px;
 }
 
 .film_name_container {
@@ -47,9 +72,10 @@ body {
 .film_title {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 700;
-  font-size: 54pt;
+  font-size: 38pt;
   color: #F1FAEE;
   display: block;
+  margin-left: 67px;
 }
 
 .desc_container {
@@ -61,28 +87,109 @@ body {
   font-weight: 400;
   font-size: 16pt;
   color: #F1FAEE;
+  margin-left: 67px;
+  margin-top: 51px;
 }
 
 .action_pannel {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+
+
 }
 
-.navigation {
-  display: block;
-  color: #FFFF;
-  font-family: 'Josefin Sans', sans-serif;
+
+.video_link{
+  display: flex;
+  text-decoration: none;
+  font-family: JosefinSans-Regular;
   font-size: 16px;
+  color: #F1FAEE;
+  margin-top: 45px;
+  margin-left: 67px;
+  background: #EF5D60;
+  border-radius: 5px;
+  height: 42px;
+  width: 127px;
 }
 
-.menu {
-display: flex;
-flex-direction: row;
-justify-content: flex-end;
+.scroll {
+  display: flex;
+  justify-content: center;
+  margin-left:25em;
+  margin-top:8em;
+  transform: translateX(190px) rotate(90deg) translateY(-120px);
+  font-family: JosefinSans-Regular;
+  font-size: 24px;
+  color: #F1FAEE;
+
+/*/* scroll:
+
+font-family:
+font-size: 24px;
+color: #FFFFFF;*/
+}
+
+.rating{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18pt;
+  color: #F1FAEE;
+  margin-left: 65px;
+  margin-bottom: 26px;
+  margin-top: 63px;
+}
+
+.barRed {
+  border: 5px solid #EF5D60;
+  width: 30px;
+  margin-left: 67px;
 }
 
 
+.cover {
+display: inline-flex;
+margin-top: 40px;
+margin-left: 67px;
+background: #D8D8D8;
+border-radius: 5px;
+width: 266px;
+height: 416px;
+}
+
+.coverTxt{
+  display: inline-block;
+font-family: JosefinSans-Light;
+font-size: 18px;
+color: #FFE66D;
+margin-left: 75px;
+margin-top: 20px;
+}
+
+.barLight {
+  border-top: 2px solid #EF5D60;
+  width: 350px;
+  margin-top: 180px;
+  margin-left: 545px;
+  margin-bottom: 30px;
+}
+
+.contact{
+  font-family: JosefinSans-Regular;
+  font-size: 14px;
+  color: #F1FAEE;
+  text-align: center;
+}
+
+.facebook{
+  margin-left: 680px;
+  margin-top: 30px;
+}
+
+.twitter{
+
+}
 /* more than 480px wide */
 
-@media (min-width: 480px) {}
+@media (min-width: 480px) {
+
+}
