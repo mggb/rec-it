@@ -96,8 +96,6 @@ body {
 
 
 }
-
-
 .video_link{
   display: flex;
   text-decoration: none;
@@ -109,7 +107,15 @@ body {
   background: #EF5D60;
   border-radius: 5px;
   height: 42px;
-  width: 127px;
+  width: 80%px;
+  cursor: pointer;
+}
+.info_link{
+background: #FFE66D;
+border-radius: 100%;
+width: 42px;
+height: 43px;
+cursor: pointer;
 }
 
 .scroll {
@@ -147,7 +153,9 @@ color: #FFFFFF;*/
 
 
 .cover {
-display: inline-flex;
+display:flex;
+flex-wrap:nowrap;
+justify-content: space-between;
 margin-top: 40px;
 margin-left: 67px;
 background: #D8D8D8;
@@ -157,12 +165,18 @@ height: 416px;
 }
 
 .coverTxt{
-  display: inline-block;
+display: inline-block;
 font-family: JosefinSans-Light;
 font-size: 18px;
 color: #FFE66D;
 margin-left: 75px;
 margin-top: 20px;
+}
+
+.coverimg{
+}
+.coverContainer{
+  display: flex;
 }
 
 .barLight {
@@ -181,7 +195,7 @@ margin-top: 20px;
 }
 
 .facebook{
-  margin-left: 680px;
+  margin-left: 675px;
   margin-top: 30px;
 }
 
