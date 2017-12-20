@@ -35,10 +35,10 @@
         <li class="listContainer">Mes téléchargement</li>
         <li class="listContainer">Mes listes</li>
         <li class="listContainer">Aide & Contact</li>
-
       </ul>
     </nav>
   </header>
+
   <section class="featured overlay">
 
 
@@ -53,9 +53,14 @@
 
     <div class="action_pannel">
       <button class="video_link">Voir le film</button>
-      <button class="info_link">i</button>
+      <button class="info_link" aria-haspopup="true">i</button>
     </div>
+
     <p class="scroll">scroll</p>
+    <div class="barWhite"></div>
+
+
+
   </section>
 
   <section class="films">
@@ -85,7 +90,7 @@
     <p class="rating">Derniers ajouts</p>
     <div class="barRed"></div>
 
-    <ul class="coverContainer">
+    <ul class="containernews">
       <li class="coverimg">
         <img src="" alt="" class="cover">
         <p class="coverTxt">Naruto Live Action (avec Florian <br> Nguye et Aziatomik)</p>
@@ -103,9 +108,7 @@
         <p class="coverTxt">Naruto Live Action (avec Florian <br> Nguye et Aziatomik)</p>
       </li>
     </ul>
-
   </section>
-
 
   <footer>
     <div class="barLight"></div>
@@ -115,17 +118,124 @@
     <img src="images/logo_flex.svg" alt="" class="logo">
   </footer>
 
+  <div class="mask" role="dialog"></div>
+
+  <div class="modal" role="alert">
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+      <meta charset="UTF-8">
+      <title>Document</title>
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600,700" rel="stylesheet">
+    </head>
+
+    <body>
+      <!--
+    <p class="action">action</p>
+    <p class="comedy">commedy</p>
+    <p class="horor">horor</p>
+    <p class="animation">anim</p>
+    <p class="thriller">thriller</p>
+    <button class="button" type="button" name="button">pres to create</button>
+    <section class="section1">
+      <ul class="container">
+        <li>1</li>
+      </ul>
+    </section>
+  -->
+      <header class="header">
+        <div class="container">
+          <img src="images/logo_flex.svg" alt="" class="logo">
+        </div>
+      </header>
+      <section class="featured overlay">
 
 
 
+        <p class="author_name">Otaking77077</p>
 
 
+        <span class="film_title">TIE Fighter - Short Film</span>
+        <p class="film_description">
+          hat if there was an Empire-focussed short Star Wars <br>animation, drawn with the crazy detail …
+        </p>
+
+        <div class="action_pannel">
+          <button href="#" class="video_link">Voir le film</button>
+        </div>
+        <p class="scroll">scroll</p>
+      </section>
+
+      <section class="films">
+
+        <div class="barredPosition1">
+          <p class="rating1">Description</p>
+          <div class="barRed"></div>
+        </div>
 
 
-  <script type="text/javascript" src="js/data.js"></script>
-  <script type="text/javascript" src="js/table.js"></script>
-  <script type="text/javascript" src="js/video.js"></script>
-  <script type="text/javascript" src="js/player.js"></script>
+        <div class="descContainer">
+
+          <li class="desc">Catégorie :</li>
+          <p class="Blabla">Animation</p>
+          <li class="desc">Note :</li>
+          <p class="Blabla">4/5</p>
+          <li class="desc">Année :</li>
+          <p class="Blabla">2015</p>
+        </div>
+
+        <div class="descContainer2">
+
+          <li class="desc2">Auteur :</li>
+          <p class="Blabla">OtaKing77077</p>
+          <li class="desc2">Site auteur :</li>
+          <p class="Blabla">https://www.youtube.com/channel/UCRBNWKYrybXl2Un6-ejwx8g</p>
+        </div>
+
+        <div class="barredPosition2">
+
+          <p class="rating2">À propos</p>
+          <div class="barRed"></div>
+        </div>
+
+
+        <p class="desctexte">hat if there was an Empire-focussed short Star Wars animation, drawn <br> with the crazy detail and shading of classic 80s anime that's all <br> but vanished from Japan nowadays? …</p>
+        <p class="CoucouJeSuisUntexteInutile">Lire plus</p>
+
+        <div class="barLight"></div>
+        <p class="contact">Contactez-nous<br>Nos conditions générales</p>
+        <img src="images/facebook.png" alt="" class="facebook">
+        <img src="images/twitter.png" alt="" class="twitter">
+        <img src="images/logo_flex.svg" alt="" class="logo">
+      </section>
+
+      <footer class="footer">
+        <div class="footerContainer">
+          <div class="footerNav">
+            <div class="footerLogo">
+            </div>
+            <div class="copyrightContainer">
+              <p class="copyright">© 2017 <span class="redrecit">RECORD IT</span>, tous droits réservés.</p>
+            </div>
+      </footer>
+
+      <script type="text/javascript" src="js/modal.js"></script>
+      <script type="text/javascript" src="js/data.js"></script>
+      <script type="text/javascript" src="js/table.js"></script>
+      <script type="text/javascript" src="js/video.js"></script>
+      <script type="text/javascript" src="js/player.js"></script>
+    </body>
+
+    </html>
+    </div>
+
+    <script type="text/javascript" src="js/data.js"></script>
+    <script type="text/javascript" src="js/table.js"></script>
+    <script type="text/javascript" src="js/video.js"></script>
+    <script type="text/javascript" src="js/player.js"></script>
 </body>
 
 </html>

@@ -23,7 +23,7 @@ body {
 .navigation {
   display: block;
   float: right;
-  color: #FFFF;
+  color: #F1FAEE;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 16px;
   margin-top: 23px;
@@ -98,7 +98,6 @@ body {
 }
 .video_link{
   display: flex;
-  text-decoration: none;
   font-family: JosefinSans-Regular;
   font-size: 16px;
   color: #F1FAEE;
@@ -107,15 +106,28 @@ body {
   background: #EF5D60;
   border-radius: 5px;
   height: 42px;
-  width: 80%px;
+  width: 12%px;
   cursor: pointer;
 }
 .info_link{
 background: #FFE66D;
 border-radius: 100%;
+font-family: JosefinSans-Regular;
+font-size: 16px;
+color: #2B243F;
 width: 42px;
 height: 43px;
+margin-top: 45px;
+margin-left: 45px;
 cursor: pointer;
+
+&:hover{
+  background: #c0392b;
+}
+
+&:active{
+  transform: scale(0.9);
+  }
 }
 
 .scroll {
@@ -127,12 +139,6 @@ cursor: pointer;
   font-family: JosefinSans-Regular;
   font-size: 24px;
   color: #F1FAEE;
-
-/*/* scroll:
-
-font-family:
-font-size: 24px;
-color: #FFFFFF;*/
 }
 
 .rating{
@@ -143,6 +149,15 @@ color: #FFFFFF;*/
   margin-left: 65px;
   margin-bottom: 26px;
   margin-top: 63px;
+}
+
+.barWhite{
+  border-bottom: 2px solid #F1FAEE;
+  width: 50px;
+  margin-left:130px;
+  transform: translateX(190px) rotate(90deg) translateY(-120px);
+  margin-left:62.3em;
+  margin-top: 4.5em;
 }
 
 .barRed {
@@ -179,6 +194,10 @@ margin-top: 20px;
   display: flex;
 }
 
+.containernews{
+  display: flex;
+}
+
 .barLight {
   border-top: 2px solid #EF5D60;
   width: 350px;
@@ -200,8 +219,60 @@ margin-top: 20px;
 }
 
 .twitter{
-
 }
+
+.modal{
+  position: fixed;
+  width: 1440px;
+  height: 400px;
+  background: #bdc3c7;
+  z-index: 100;
+  visibility: hidden;
+
+  opacity: 0;
+
+  transition: 0.5s ease-out;
+
+  transform: translateY(45px);
+}
+.close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 50;
+  visibility: hidden;
+
+  opacity: 0;
+
+  transition: 0.7s;
+}
+
+.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+.active + .modal{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* more than 480px wide */
 
 @media (min-width: 480px) {
