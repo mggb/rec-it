@@ -5,12 +5,11 @@ var comedy = document.querySelector('.comedy');
 var horor = document.querySelector('.horor');
 
 
-
+var div=document.querySelector('.div')
 action.addEventListener('click',function () {
   for (var i = 0; i < data.films.length; i++) {
     if (data.films[i].category=='Action') {
-      console.log(i);
-      console.log(data.films[i]);
+      data.films[i]
     }
   }
 });
@@ -38,3 +37,6 @@ horor.addEventListener('click',function () {
     }
   }
 });
+
+
+var
