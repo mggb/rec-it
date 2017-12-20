@@ -1,0 +1,481 @@
+body {
+  background-color: #2B243F;
+
+}
+
+.header {
+  position: fixed;
+  z-index: 30;
+  width: 100%;
+}
+
+.listContainer {
+  display: inline-block;
+
+}
+
+.logo {
+  display: block;
+  position: absolute;
+  height: 30px;
+  margin: 22px 0;
+  margin-left: 67px;
+}
+.navigation {
+  display: block;
+  float: right;
+  color: #FFFF;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 23px;
+  margin-right: 69px;
+
+}
+
+.menu {
+
+}
+
+.featured {
+  background: fixed;
+  background-image: url("../images/tie+fighter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 114px;
+  box-sizing: border-box;
+}
+
+.featured_container {}
+
+.name_container {
+  padding-bottom: 30px;
+}
+
+.author_name {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18pt;
+  color: #F1FAEE;
+  margin-left: 69px;
+  margin-bottom: 48px;
+  margin-top: 110px;
+  border-bottom: 8px solid #EF5D60;
+  width: 180px;
+  margin-left: 67px;
+}
+
+.film_name_container {
+  padding-bottom: 30px;
+}
+
+.film_title {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 38pt;
+  color: #F1FAEE;
+  display: block;
+  margin-left: 67px;
+}
+
+.desc_container {
+  padding-bottom: 34px;
+
+}
+
+.film_description {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  color: #F1FAEE;
+  margin-left: 67px;
+  margin-top: 51px;
+}
+
+.action_pannel {
+  display: flex;
+
+
+}
+.video_link{
+  display: flex;
+  font-family: JosefinSans-Regular;
+  font-size: 16px;
+  color: #F1FAEE;
+  margin-top: 45px;
+  margin-left: 67px;
+  background: #EF5D60;
+  border-radius: 5px;
+  height: 42px;
+  width: 12%px;
+  cursor: pointer;
+}
+.info_link{
+background: #FFE66D;
+border-radius: 100%;
+font-family: JosefinSans-Regular;
+font-size: 16px;
+color: #2B243F;
+width: 42px;
+height: 43px;
+margin-top: 45px;
+margin-left: 45px;
+cursor: pointer;
+
+&:hover{
+  background: #c0392b;
+}
+
+&:active{
+  transform: scale(0.9);
+  }
+}
+
+.scroll {
+  display: flex;
+  justify-content: center;
+  margin-left:25em;
+  margin-top:8em;
+  transform: translateX(190px) rotate(90deg) translateY(-120px);
+  font-family: JosefinSans-Regular;
+  font-size: 24px;
+  color: #F1FAEE;
+}
+/* scroll:
+font-family:
+font-size: 24px;
+color: #FFFFFF;*/
+
+
+.rating{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18pt;
+  color: #F1FAEE;
+  margin-left: 65px;
+  margin-bottom: 26px;
+  margin-top: 63px;
+}
+
+.barRed {
+  border: 5px solid #EF5D60;
+  width: 30px;
+  margin-left: 67px;
+}
+
+
+.cover {
+display:flex;
+flex-wrap:nowrap;
+justify-content: space-between;
+margin-top: 40px;
+margin-left: 67px;
+background: #D8D8D8;
+border-radius: 5px;
+width: 416px;
+height: 266px;
+}
+
+.coverTxt{
+display: inline-block;
+font-family: JosefinSans-Light;
+font-size: 18px;
+color: #FFE66D;
+margin-left: 75px;
+margin-top: 20px;
+}
+
+.coverimg{
+  transition-timing-function: ease;
+}
+.container_slider{
+   width: 87%;
+   overflow: hidden;
+  margin-left: 57px;
+
+
+}
+.coverContainer{
+  display: flex;
+  overflow-x: auto;
+
+}
+.coverContainer::-webkit-scrollbar {
+  display: none;
+}
+.containernews{
+  display: flex;
+  overflow-x: auto;
+}
+.containernews::-webkit-scrollbar {
+  display: none;
+}
+.fullfilm{
+  display: flex;
+  overflow-x: auto;
+}
+.fullfilm::-webkit-scrollbar {
+  display: none;
+}
+
+.barLight {
+  border-top: 2px solid #EF5D60;
+  width: 350px;
+  margin-top: 180px;
+  margin-left: 545px;
+  margin-bottom: 30px;
+}
+
+.contact{
+  font-family: JosefinSans-Regular;
+  font-size: 14px;
+  color: #F1FAEE;
+  text-align: center;
+}
+
+.facebook{
+  margin-left: 675px;
+  margin-top: 30px;
+}
+
+.twitter{
+
+}
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:#2B243F;
+  z-index: 0;
+  overflow: scroll;
+}
+.modal_content {
+}
+
+/*
+.modal_overlay {
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+*/
+
+/* COMMENCEMENT DES FICHES */
+
+.modal_section1{
+  top:0;
+  height: 100vh;
+  background: url(../images/tie+fighter.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15.5%;
+  box-sizing: border-box;
+
+}
+.author_name_modal{
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 18pt;
+  color: #F1FAEE;
+  margin-left: 69px;
+  margin-bottom: 48px;
+  border-bottom: 8px solid #EF5D60;
+  width: 180px;
+  margin-left: 67px;
+}
+.modal_section2{
+  height: 100vh;
+  background: #2B243F;
+}
+.barredPosition1 {
+  display: flex;
+}
+
+.barredPosition2 {
+  display: flex;
+}
+
+.rating1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  color: #F1FAEE;
+  margin-left: 65px;
+  margin-bottom: 26px;
+  margin-top: 150px;
+}
+.rating2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  font-size: 46px;
+  color: #F1FAEE;
+  margin-left: 65px;
+  margin-bottom: 26px;
+  margin-top: 150px;
+}
+
+.descContainer {
+  display: flex;
+}
+
+.descContainer2 {
+  display: flex;
+}
+
+.barRed5 {
+  border-bottom: 5px solid #EF5D60;
+  width: 100px;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: -182px;
+}
+
+.barRed2 {
+  border-bottom: 5px solid #EF5D60;
+  width: 100px;
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: -172px;
+}
+
+
+
+.desc {
+  color: #fff;
+  font-size: 36px;
+  margin-top: 50px;
+  margin-left: 67px;
+  list-style: none;
+}
+
+.Blabla {
+  color: #FFE66D;
+  margin-top: 59px;
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+.desc2 {
+  color: #fff;
+  font-size: 36px;
+  margin-top: 50px;
+  margin-left: 67px;
+  list-style: none;
+}
+
+.barLight {
+  border-top: 2px solid #EF5D60;
+  width: 350px;
+  margin-top: 180px;
+  margin-left: 545px;
+  margin-bottom: 30px;
+}
+
+.desctexte {
+  color: #fff;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.CoucouJeSuisUntexteInutile {
+  text-align: center;
+  color: #FFE66D;
+  margin-top: 50px;
+}
+
+.contact {
+  font-family: JosefinSans-Regular;
+  font-size: 14px;
+  color: #F1FAEE;
+  text-align: center;
+}
+
+.facebook {
+  margin-left: 680px;
+  margin-top: 30px;
+}
+
+.twitter {}
+
+.footer {
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+.redRecit {
+  color: #EF5D60;
+}
+
+.copyright {
+  color: #fff;
+  text-decoration: none;
+  width: 400px;
+  /*text-align: right;*/
+}
+
+.footer {
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  color: #FFF;
+}
+
+.copyright {
+  text-decoration: none;
+  text-align: right;
+}
+
+.copyrightContainer {
+  display: flex;
+  margin-left: 900px;
+}
+
+.redrecit {
+  color: #EF5D60;
+}
+
+.close{
+  position: fixed;
+  margin-top: 28px;
+  margin-right: 18px;
+  top: 0;
+  right: 0;
+  width:35px;
+  height: 35px;
+  background: #000px;
+  border-radius: 100%;
+  color: #EF5D60;
+  cursor: pointer;
+  border: 0;
+}
+
+.CoucouJeSuisUntexteInutile{
+  margin-bottom: 70px;
+}
+/* more than 480px wide */
+
+@media (min-width: 480px) {
+
+}
+© 2017 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+API
+Training
+Shop
+Blog

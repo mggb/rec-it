@@ -13,7 +13,7 @@ var data = {
         sub_language: 'N/A',
         rating: 4,
         category: 'Animation',
-        featured: false,
+        featured: true,
         img_url: 'tie_fighter.png'
 
     }, {
@@ -238,7 +238,7 @@ var data = {
         sub_language: 'N/A',
         rating: 5,
         category: 'Animation',
-        featured: true,
+        featured: false,
         img_url: 'heat_vs_repulsion.png'
     }, {
         src: 'SPAWN_+THE+RECALL+-+FAN+FILM(720p).mp4',

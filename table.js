@@ -38,5 +38,6 @@ horor.addEventListener('click',function () {
   }
 });
 
-
-var
+/*button.addEventListener("click", function(){
+  overlay.style.display = 'block';
+})*/
