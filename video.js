@@ -179,6 +179,16 @@ return film_array;
             content2 += movieSelected.year;
           content2 += "</p>";
         content2 += "</div>";
+
+        content2 += "<div class='tendu'>";
+          content2 += "<li class='desc'>";
+            content2 += "durée :";
+          content2 += "</li>";
+          content2 += "<p class='Blabla'>";
+            content2 += movieSelected.duration;
+          content2 += "</p>";
+        content2 += "</div>";
+
         content2 += "</div>";
         content2 += "<div class='descContainer2'>";
         content2 += "<div class='tendu'>";

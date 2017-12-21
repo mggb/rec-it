@@ -51,6 +51,18 @@ horor.addEventListener('click',function () {
     }
   }
 });
+var button_video =document.querySelector('.video_link');
+var trade = event.path[3].children[1].children[1].span;
+var modal_video = document.querySelector('.modal_video1')
+button_video.addEventListener('click',function (event) {
+  for (var i = 0; i < data.films.length; i++) {
+    if (data.films[i]!==trade) {
+      i++
+    }
+    modal_video.style.display='block';
+    section1_modal.setAttribute('style', 'background-video:url('+data.img_url+')');
+  }
+});
 
 /*button.addEventListener("click", function(){
   overlay.style.display = 'block';
