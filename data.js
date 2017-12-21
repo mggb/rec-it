@@ -57,7 +57,7 @@ var data = {
         rating: 4,
         category: 'Action',
         featured: false,
-        img_url: 'naruto_dance'
+        img_url: 'naruto_dance.png'
     }, {
         src: 'NARUTO+-+New+Movie+2018+-+Full+Trailer+AMAZING!!(720p).mp4',
         title: 'NARUTO - New Movie 2018',
@@ -99,7 +99,7 @@ var data = {
         rating: 5,
         category: 'Action',
         featured: false,
-        img_url: 'red_hood'
+        img_url: 'red_hood.png'
     }, {
         src: 'JUSTICE+LEAGUE_+Trinity+Force+_+DC+FAN+FILM+_(720p).mp4',
         title: 'JUSTICE LEAGUE: Trinity Force | DC FAN FILM |',
@@ -141,7 +141,7 @@ var data = {
         rating: 4,
         category: 'Comedy',
         featured: false,
-        img_url: 'the_flash'
+        img_url: 'the_flash.png'
     }, {
         src: 'Clash+at+the+Cantina+(2014)+-+Star+Wars+Fan+Film(720p).mp4',
         title: 'Clash at the Cantina (2014) - Star Wars Fan Film',
@@ -197,7 +197,7 @@ var data = {
         rating: 3,
         category: 'Horror / Thriller',
         featured: false,
-        img_url: ''
+        img_url: 'fallout.png'
     }, {
         src: 'Dragon+Ball+Z_+Light+of+Hope+-+Pilot(720p).mp4',
         title: 'Dragon Ball Z: Light of Hope - Pilot',

@@ -106,6 +106,7 @@ return film_array;
     TonLi.className='coverimg';
     monUL.appendChild(TonLi);
   };
+
   var chopeli = document.querySelectorAll('.coverimg');
   console.log(chopeli);
   for (var i = 0; i < chopeli.length; i++) {
@@ -146,43 +147,58 @@ return film_array;
       content2 +="<section class='modal_section2'>";
         content2 +="<div class='barredPosition1'>";
           content2 +="<p class='rating1'>";
+          content2 +="description"
+          content2 +="</p>"
           content2 += "<div class='barRed5'>";
+          content2 += "</div>";
         content2 += "</div>";
+      content2 += "<div class='descContainerTotal'>";
         content2 += "<div class='descContainer'>";
+        content2 += "<div class='tendu'>";
           content2 += "<li class='desc'>";
-            content2 += "'Catégorie'";
+            content2 += "Catégorie :";
           content2 += "</li>";
           content2 += "<p class='Blabla'>";
             content2 += movieSelected.category;
           content2 += "</p>";
+        content2 += "</div>"
+        content2 += "<div class='tendu'>";
           content2 += "<li class='desc'>";
-            content2 += "note"
+            content2 += "note:"
           content2 += "</li>"
           content2 += "<p class='Blabla'>";
             content2 += movieSelected.rating;
             content2 += "/5";
           content2 += "</p>";
+        content2 += "</div>";
+        content2 += "<div class='tendu'>";
           content2 += "<li class='desc'>";
-            content2 += "année";
+            content2 += "année :";
           content2 += "</li>";
           content2 += "<p class='Blabla'>";
             content2 += movieSelected.year;
           content2 += "</p>";
         content2 += "</div>";
+        content2 += "</div>";
         content2 += "<div class='descContainer2'>";
+        content2 += "<div class='tendu'>";
           content2 += "<li class='desc2'>";
-            content2 += "Catégorie :";
+            content2 += "Auteur :";
           content2 += "</li>";
           content2 += "<p class='Blabla'>";
             content2 += movieSelected.author;
           content2 += "</p>";
+          content2 += "</div>";
+          content2 += "<div class='tendu'>";
           content2 += "<li class='desc2'>";
-            content2 += "site auteur";
+            content2 += "site auteur :";
           content2 += "</li>";
           content2 += "<p class='Blabla'>";
             content2 += movieSelected.author_url;
           content2 += "</p>";
+          content2 += "</div>";
         content2 += "</div>";
+      content2 += "</div>";
         content2 += "<div class='barredPosition2'>";
           content2 += "<p class='rating2'>";
             content2 += "A propos";
@@ -199,16 +215,12 @@ return film_array;
       content2 += "</section>";
     content2 += "</div>"
       modal.innerHTML = content2;
+      var section1_modal=document.querySelector('.modal_section1');
+      section1_modal.setAttribute('style', 'background-image:url('+movieSelected.img_url+')');
 
       var close=document.querySelector('.close');
       close.addEventListener('click',function(){
         modal.style.display='';
       });
-
-
-
-
-
     });
-
   }

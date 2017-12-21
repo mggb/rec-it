@@ -7,10 +7,15 @@ body {
   position: fixed;
   z-index: 30;
   width: 100%;
+  background: black;
+  height: 80px;
 }
 
 .listContainer {
   display: inline-block;
+  font-size: 25px;
+  margin-left: 25px;
+
 
 }
 
@@ -45,6 +50,9 @@ body {
   height: 100vh;
   padding-top: 114px;
   box-sizing: border-box;
+
+
+
 }
 
 .featured_container {}
@@ -156,6 +164,7 @@ color: #FFFFFF;*/
   margin-left: 65px;
   margin-bottom: 26px;
   margin-top: 63px;
+  margin-right: 18px;
 }
 
 .barRed {
@@ -190,9 +199,9 @@ margin-top: 20px;
   transition-timing-function: ease;
 }
 .container_slider{
-   width: 87%;
+   width: 98%;
    overflow: hidden;
-  margin-left: 57px;
+
 
 
 }
@@ -218,6 +227,13 @@ margin-top: 20px;
 .fullfilm::-webkit-scrollbar {
   display: none;
 }
+.catego{
+  display: flex;
+  overflow-x: auto;
+}
+.catego::-webkit-scrollbar {
+  display: none;
+}
 
 .barLight {
   border-top: 2px solid #EF5D60;
@@ -225,6 +241,18 @@ margin-top: 20px;
   margin-top: 180px;
   margin-left: 545px;
   margin-bottom: 30px;
+}
+.container_cate{
+  display:flex ;
+
+}
+.test2{
+  margin-top: 63px;
+  margin-right: 100px;
+  color: blue;
+  font-family: 'Josefin Sans', sans-serif;
+font-weight: 700;
+font-size: 18pt;
 }
 
 .contact{
@@ -277,6 +305,7 @@ margin-top: 20px;
   background-size: cover;
   padding-top: 15.5%;
   box-sizing: border-box;
+  margin-top: 80px;
 
 }
 .author_name_modal{
@@ -322,10 +351,18 @@ margin-top: 20px;
 }
 
 .descContainer {
-  display: flex;
+  display: flex;flex-direction: column;
 }
 
 .descContainer2 {
+  display: flex;
+  flex-direction: column;
+}
+.descContainerTotal{
+  display: flex;
+  justify-content: space-between;
+}
+.tendu{
   display: flex;
 }
 
@@ -334,7 +371,7 @@ margin-top: 20px;
   width: 100px;
   display: flex;
   margin-bottom: 10px;
-  margin-left: -182px;
+  margin-left: 182px;
 }
 
 .barRed2 {
@@ -342,7 +379,7 @@ margin-top: 20px;
   width: 100px;
   display: flex;
   margin-bottom: 10px;
-  margin-left: -172px;
+  margin-left: 172px;
 }
 
 
@@ -383,6 +420,8 @@ margin-top: 20px;
   font-size: 36px;
   text-align: center;
   margin-top: 50px;
+  margin-left: 247px;
+  margin-right: 247px;
 }
 
 .CoucouJeSuisUntexteInutile {
@@ -447,7 +486,7 @@ margin-top: 20px;
 
 .close{
   position: fixed;
-  margin-top: 28px;
+  margin-top: 80px;
   margin-right: 18px;
   top: 0;
   right: 0;
@@ -458,6 +497,7 @@ margin-top: 20px;
   color: #EF5D60;
   cursor: pointer;
   border: 0;
+  z-index: 99;
 }
 
 .CoucouJeSuisUntexteInutile{
