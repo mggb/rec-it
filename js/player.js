@@ -1,4 +1,4 @@
-/* prendre les éléments */
+/* viariables */
   var player = document.querySelector('.player');
   var video = document.querySelector('.viewer');
   var progress = document.querySelector('.progress');
@@ -14,44 +14,26 @@
   var player__modal = document.querySelector('.player_modal');
   var modal__overlay = document.querySelector('.overlay');
   var back_arrow = document.querySelector('.back_btn');
-  var all__video__controls = document.querySelector('.control');
-
+  var volume__control = document.querySelector('.volume_control');
+  var muteIcon = document.getElementById('muteIcon');
+  var unmuteIcon = document.getElementById('soundUpIcon');
+  var fullScreenIcon = document.getElementById('fullScreen-icon');
+  var regularScreenIcon = document.getElementById('regularScreen-icon');
   var save
+  var timer
 
-  var test = false;
 
-  var settings = {
 
-    autoPlay : true,
 
-  }
-
-/* Construire les fonctions */
-function toggleControls(){
-  if(test = true){
-
-    all__video__controls.classList.toggle('fade');
-
-  }else{
-
-  }
-
-}
+/* fonctions */
 
 function togglePlay() {
-
   if (video.paused) {
     video.play();
-    big_btn.classList.toggle('fade');
-    player.addEventListener('mouseenter', toggleControls);
-    player.addEventListener('mouseleave', toggleControls);
     fadeControls();
 
   }else{
     video.pause();
-    big_btn.classList.toggle('fade');
-    player.addEventListener('mouseenter', toggleControls);
-    player.addEventListener('mouseleave', toggleControls);
 
   }
 
@@ -65,51 +47,62 @@ function updateButton() {
 
   }else{
     toggle.textContent = '❙❙';
-    // fadeControls();
+
+  }
+}
+
+function fadeControls(){
+
+  if(video.paused){
+
+    back_arrow.classList.remove('fade');
+    controls.classList.remove('fade');
+    big_btn.classList.remove('fade');
+
+
+  }else{
+
+    big_btn.classList.add('fade');
+    menuTimer();
+
+/*
+    window.setTimeout(function(){
+      back_arrow.classList.add('fade');
+      controls.classList.add('fade');
+      console.log('settimeout');
+    }, 3000);
+*/
+menuTimer();
   }
 
 }
 
-function fadeControls(){
-  window.setTimeout(function(){
-    all__video__controls.classList.toggle('fade');
-    player.classList.toggle('--cursor_none');
-    console.log('ca marche');
+function menuTimer (){
+  timer = setTimeout(function(){
+
+    back_arrow.classList.add('fade');
+    controls.classList.add('fade');
+    console.log('settimeout');
+    stopTimer();
   }, 3000);
+}
+function stopTimer(){
+  clearTimeout(timer);
 }
 
 function stopVideo() {
   video.currentTime = 0;
   video.pause();
-}
-/*¨
 
-volume.addEventListener('click', function (){
-  video.value = volume.value / 100;
-});
-*/
-
-function toggleMute(){
-  video.volume = 0;
-  soundIcon.textContent = '🔇';
-  volume.value = 0;
 }
+
 
 function handleRangeUpdate() {
-
   // fonction du volume
+  console.log(video.volume);
   var value = this.value / 100;
   video.volume = value;
-  save = video.volume;
-  console.log('saved :' + save);
-
-
-  if(video.volume === 0){
-    soundIcon.textContent = '🔇';
-
-  }else{
-    soundIcon.textContent = '🔈';
-  }
+//  save = video.volume;
 
 }
 
@@ -120,30 +113,56 @@ function handleProgress() {
 }
 
 function scrub(e) {
-  var scrubTime = (e.offsetX / progress.offsetWidth)* video.duration;
+  var scrubTime = (e.offsetX / progress.offsetWidth) * video.duration;
   video.currentTime = scrubTime;
 }
+
 function toggleFullScreen(){
+  fullScreenIcon.classList.toggle('--none');
+  regularScreenIcon.classList.toggle('--none');
   video.webkitRequestFullscreen();
+
 }
+
 function toggleModal() {
+  stopVideo();
   player__modal.classList.toggle('--none');
 }
 
 function timer(){
   var chronoM = Math.floor(video.currentTime / 60);
   var chronoS = Math.floor(video.currentTime - 60 * chronoM);
+  var total = video.duration;
+
   if (chronoS < 10){
     chronoS = "0" + chronoS;
   }
-  var total = video.duration;
+
   time.textContent = chronoM + ":" + chronoS;
 }
 
 
 
-/* Accrocher les events listener */
-video.addEventListener('click', togglePlay);
+/* events listener */
+
+video.addEventListener('click', function(){
+  back_arrow.classList.toggle('fade');
+  controls.classList.toggle('fade');
+  big_btn.classList.toggle('fade');
+  video.classList.toggle('--cursor_none');
+  togglePlay();
+
+});
+
+big_btn.addEventListener('click', function(){
+  this.classList.toggle('fade');
+  back_arrow.classList.toggle('fade');
+  controls.classList.toggle('fade');
+  video.classList.toggle('--cursor_none');
+  togglePlay();
+
+});
+
 video.addEventListener('play', updateButton);
 video.addEventListener('pause', updateButton);
 video.addEventListener('timeupdate', handleProgress);
@@ -164,47 +183,39 @@ progress.addEventListener('mousemove', (e) => mousedown && scrub(e));
 progress.addEventListener('mousedown', () => mousedown = true);
 progress.addEventListener('mouseup', () => mousedown = false);
 
-big_btn.addEventListener('click', togglePlay);
 
-/*
-player.addEventListener('mouseenter', toggleControls);
-player.addEventListener('mouseleave', toggleControls);
-*/
 
 player.addEventListener('mousemove', function(){
+  back_arrow.classList.remove('fade');
   controls.classList.remove('fade');
+  big_btn.classList.remove('fade');
   video.classList.remove('--cursor_none');
   fadeControls();
-  console.log('souris bouge');
+
 });
 
 
 soundIcon.addEventListener('click', function(){
-  if(video.volume === 0){
-    console.log('le volume reviens à '+ save);
+
+  if(video.muted == true){
+    video.muted = false;
+    unmuteIcon.classList.toggle('--none');
+    muteIcon.classList.toggle('--none');
+    volume.value = save;
 
   }else{
-    console.log(volume.min);
-
+    save = volume.value
+    video.muted = true;
+    unmuteIcon.classList.toggle('--none');
+    muteIcon.classList.toggle('--none');
+    volume.value = 0;
+    console.log('ouiiiiiiiiiii');
   }
+
 });
 
-//
-modal__overlay.addEventListener('click', toggleModal);
 back_arrow.addEventListener('click', toggleModal);
 
-/*
-reste à faire :
-
-- régler le mode plein ecran qui bug
-- régler le display none sur la barre de son
-- régler le problemme d'affichage du grand bouton play/pause en plein ecran
-- régler le problème du son trop fort en début de video
-- enlever les ombres bleues dégeulasse du style par défaut du navigateur quand on clique sur les boutons
-- comprendre comment empecher le mousemove de se lancer continuellement
-- gérer le problème du Z index sur le bouton play en plei ecran
-
-*/
 
 /* code voué à la poubelle */
 
