@@ -189,7 +189,7 @@ soundIcon.addEventListener('click', function(){
   }
 });
 
-
+//
 modal__overlay.addEventListener('click', toggleModal);
 back_arrow.addEventListener('click', toggleModal);
 
